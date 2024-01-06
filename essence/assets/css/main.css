@@ -1,0 +1,780 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  min-height: 85px;
+  border: 1px solid #EBEBEB;
+  background-color: white;
+  position: absolute !important;
+  z-index: 1;
+  position: fixed !important;
+}
+nav .essence {
+  width: 90%;
+}
+nav .essence .essenceList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42%;
+  gap: 5px;
+}
+nav .essence .essenceList li a {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #a4a3a3 !important;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList li a:hover {
+  color: #000 !important;
+}
+nav .essence .essenceList .pages {
+  position: relative;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages:hover {
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages:hover .pagesHover {
+  display: block;
+  position: absolute;
+  top: 55px;
+  background-color: #fff;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages .pagesHover {
+  display: none;
+}
+nav .essence .essenceList .pages .pagesHover p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 30px;
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #a4a3a3 !important;
+  border-top: 1px solid #aaa;
+  width: 100%;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+nav .essence .essenceList .pages .pagesHover p:hover {
+  color: #000 !important;
+}
+nav .essence .cartUserSearch {
+  min-height: 85px;
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 42px;
+  list-style: none;
+}
+nav .essence .cartUserSearch li a i {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+nav .essence .cartUserSearch .searchInp {
+  min-height: 85px;
+  min-width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  border-right: 1px solid #EBEBEB;
+  border-left: 1px solid #EBEBEB;
+}
+nav .essence .cartUserSearch .searchInp #inp {
+  border: none;
+  background-color: transparent;
+  min-width: 80%;
+  min-height: 35%;
+}
+nav .essence .cartUserSearch .searchInp #inp::placeholder {
+  color: #787878;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+nav .essence .cartUserSearch .searchInp #btn {
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 620px) {
+  nav .essence .cartUserSearch .searchInp #inp::placeholder {
+    font-size: 10px;
+  }
+  nav .essence .cartUserSearch .searchInp i {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 497px) {
+  nav .essence .cartUserSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .essence .cartUserSearch .searchInp {
+    display: none;
+  }
+}
+#new-collection {
+  background-image: url(/assets/images/bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 600px;
+  padding-top: 20px;
+}
+#new-collection .asoss {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#new-collection .asoss span {
+  color: #787878;
+  display: flex;
+  align-items: start;
+  width: 59%;
+  font-size: 18px;
+  min-height: 35px;
+}
+#new-collection .asoss h1 {
+  color: black;
+  font-size: 3.5rem;
+  min-height: 120px;
+}
+#new-collection .asoss .buttonnew {
+  display: flex;
+  align-items: start;
+  width: 60%;
+}
+#new-collection .asoss .buttonnew button {
+  padding: 10px 40px;
+  background-color: #0315FF;
+  border-color: #0315FF;
+  color: white;
+  transition: 0.3s sesion;
+}
+#new-collection .asoss .buttonnew button:hover {
+  background-color: #DC0345;
+  border-color: #DC0345;
+}
+
+@media screen and (max-width: 620px) {
+  #new-collection .asoss h1 {
+    font-size: 37px;
+  }
+}
+@media screen and (max-width: 497px) {
+  nav .essence .cartUserSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .essence .cartUserSearch .searchInp {
+    display: none;
+  }
+}
+#clothing {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+#clothing .shose {
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/images/bg-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+#clothing .shose .div {
+  width: 100%;
+  min-height: 300px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+#clothing .shose .div p {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+#clothing .dress {
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/images/bg-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+#clothing .dress .div {
+  width: 100%;
+  min-height: 300px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+#clothing .dress .div p {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+#clothing .accsessories {
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/images/bg-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 20px;
+}
+#clothing .accsessories .div {
+  width: 100%;
+  min-height: 300px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+#clothing .accsessories .div p {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+#global-sale {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+#global-sale .sale {
+  display: flex;
+  align-items: center;
+  background-image: url(/assets/images/bg-5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
+  flex-direction: column;
+  padding-top: 20px;
+}
+#global-sale .sale .buy {
+  width: 60%;
+  min-height: 400px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+}
+#global-sale .sale .buy span {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 42%;
+  font-size: 27px;
+  font-weight: 700;
+  color: #DC0345;
+  min-height: 55px;
+}
+#global-sale .sale .buy h2 {
+  font-size: 4rem;
+  min-height: 130px;
+}
+#global-sale .sale .buy .global {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 40%;
+}
+#global-sale .sale .buy .global button {
+  padding: 11px 50px;
+  font-size: 13px;
+  font-weight: 500;
+  border-color: #0315FF;
+  background-color: #0315FF;
+  color: white;
+}
+#global-sale .sale .buy .global button:hover {
+  background-color: #DC0345;
+  border-color: #DC0345;
+}
+
+@media screen and (max-width: 648px) {
+  #global-sale .sale .buy h2 {
+    font-size: 37px;
+  }
+}
+@media screen and (max-width: 497px) {
+  #global-sale .sale .buy h2 {
+    font-size: 34px;
+  }
+}
+#popular-roducts {
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+#popular-roducts .popular {
+  width: 100%;
+  padding-top: 20px;
+}
+#popular-roducts .popular h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#products {
+  width: 100%;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products #product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products #product .boxDiv {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#products #product .addtobasket {
+  padding: 7px 17px;
+  color: black;
+  font-size: 12px;
+  border-color: #F3EAD8;
+  background-color: #F3EAD8;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products #product .addtobasket:hover {
+  background-color: white;
+  color: black;
+}
+#products .button {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+#products .button #pages {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 7px 17px;
+}
+
+#brandlogo {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F7F9;
+}
+#brandlogo .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#brandlogo .brand img {
+  min-height: 30px;
+  max-width: 106px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  min-height: 85px;
+  border: 1px solid #EBEBEB;
+  background-color: white;
+}
+nav .essence {
+  width: 90%;
+}
+nav .essence .essenceList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42%;
+  gap: 5px;
+}
+nav .essence .essenceList li a {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #a4a3a3 !important;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList li a:hover {
+  color: #000 !important;
+}
+nav .essence .essenceList .pages {
+  position: relative;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages:hover {
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages:hover .pagesHover {
+  display: block;
+  position: absolute;
+  top: 55px;
+  background-color: #fff;
+  min-width: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+  transition: 0.5s ease;
+}
+nav .essence .essenceList .pages .pagesHover {
+  display: none;
+}
+nav .essence .essenceList .pages .pagesHover p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 30px;
+  font-family: poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #a4a3a3 !important;
+  border-top: 1px solid #aaa;
+  width: 100%;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+nav .essence .essenceList .pages .pagesHover p:hover {
+  color: #000 !important;
+}
+nav .essence .cartUserSearch {
+  min-height: 85px;
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 42px;
+  list-style: none;
+}
+nav .essence .cartUserSearch li a i {
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+}
+nav .essence .cartUserSearch .searchInp {
+  min-height: 85px;
+  min-width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #fff;
+  border-right: 1px solid #EBEBEB;
+  border-left: 1px solid #EBEBEB;
+}
+nav .essence .cartUserSearch .searchInp #inp {
+  border: none;
+  background-color: transparent;
+  min-width: 80%;
+  min-height: 35%;
+}
+nav .essence .cartUserSearch .searchInp #inp::placeholder {
+  color: #787878;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+nav .essence .cartUserSearch .searchInp #btn {
+  border: none;
+  background-color: transparent;
+  color: #787878;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 620px) {
+  nav .essence .cartUserSearch .searchInp #inp::placeholder {
+    font-size: 10px;
+  }
+  nav .essence .cartUserSearch .searchInp i {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 497px) {
+  nav .essence .cartUserSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .essence .cartUserSearch .searchInp {
+    display: none;
+  }
+}
+#product-sec {
+  min-height: 610px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#product-sec #getProduct {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#product-sec #getProduct .box {
+  padding-bottom: 20px;
+}
+#product-sec #getProduct button {
+  background-color: rgb(255, 197, 121);
+  border-radius: 20px;
+  padding: 8px 17px;
+  font-size: 12px;
+  color: black;
+}
+#product-sec #getProduct button:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  min-height: 417px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+footer .essenceShopList {
+  min-height: 200px;
+}
+footer .essenceShopList .essenceShopListTxt {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+footer .essenceShopList .essenceShopListTxt img {
+  height: 16px;
+  width: 74px;
+}
+footer .essenceShopList .essenceShopListTxt .list {
+  display: flex;
+  gap: 17px;
+  margin-top: 12px;
+}
+footer .essenceShopList .essenceShopListTxt .list p {
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+  color: #787878;
+  line-height: 24px;
+  font-weight: 500;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+footer .essenceShopList .essenceShopListTxt .list p:hover {
+  color: #fff;
+}
+footer .essenceShopList .subscribe {
+  min-height: 140px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .essenceShopList .subscribe h5 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: 16px;
+  font-weight: 700;
+}
+footer .essenceShopList .subscribe .subscribeInp {
+  background-color: #0315FF;
+  background-color: transparent;
+  border-bottom: 2px solid #787878;
+  width: 40%;
+}
+footer .essenceShopList .subscribe .subscribeInp input {
+  border: none;
+  width: 90%;
+  background-color: transparent;
+}
+footer .essenceShopList .subscribe .subscribeInp input::placeholder {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+}
+footer .essenceShopList .subscribe .subscribeInp i {
+  color: #787878;
+}
+footer .orderPayment {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 150px;
+}
+footer .orderPayment .orderAboutTxt p {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+footer .orderPayment .orderAboutTxt p:hover {
+  color: #fff;
+}
+footer .orderPayment .paymentAboutTxt p {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+footer .orderPayment .paymentAboutTxt p:hover {
+  color: #fff;
+}
+footer .socialMedia {
+  min-height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .socialMedia .socialMediaIcon {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+footer .socialMedia .socialMediaIcon i {
+  color: #fff;
+  cursor: pointer;
+}
+footer .copyright {
+  min-height: 130px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+footer .copyright p {
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+  color: #787878;
+  line-height: 18px;
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+footer .copyright p span {
+  color: #000;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#products {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#products .formtitle {
+  min-height: 200px;
+  width: 100%;
+}
+#products .formtitle h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+#products .formtitle p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.395);
+}

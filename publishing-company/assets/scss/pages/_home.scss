@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+
+    .headerDiv {
+        width: 100%;
+        min-height: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #E6E6E6;
+
+        .icon {
+            display: flex;
+            width: 100%;
+            min-height: 130px;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            span {
+                padding: 8px 13px;
+                border-radius: 50%;
+                border: 1px solid #E6E6E6;
+
+                &:hover {
+                    background-color: #95ADBE;
+                    color: white;
+                }
+            }
+        }
+
+        .logo {
+            width: 100%;
+            min-height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+
+                h4 {
+                    color: black;
+                    font-weight: 700;
+                    margin-bottom: 0px;
+
+                    span {
+                        color: #FF7A5C;
+                    }
+                }
+            }
+
+            a {
+                span {
+                    letter-spacing: 3px;
+                    color: #BEB9B2;
+                }
+            }
+        }
+
+        .searchInp {
+            width: 100%;
+            min-height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                border-radius: 20px 0px 0px 20px;
+            }
+
+            .search {
+                padding: 5px 14px;
+                background-color: #95ADBE;
+                border-color: #95ADBE;
+                color: white;
+                border-radius: 0px 20px 20px 0p;
+            }
+        }
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+
+        .menu {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            min-height: 60px;
+
+            .list {
+                width: 58%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                li {
+                    color: black;
+                    font-weight: 500;
+                    font-size: 16px;
+                    font-family: "Lora", serif;
+
+                    a:hover {
+                        color: #95ADBE;
+                    }
+
+                    .home {
+                        color: #95ADBE;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 1
+#good-books {
+    background-image: url(/assets/images/bg_1\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    padding-top: 20px;
+
+    .secrets-at-once {
+        min-height: 300px;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            font-weight: 700;
+            min-height: 130px;
+            font-size: 50px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 5px;
+
+            .started {
+                background-color: #95ADBE;
+                border-color: #95ADBE;
+                color: white;
+                padding: 14px 25px;
+            }
+
+            button {
+                background-color: white;
+                border-color: white;
+                color: black;
+                padding: 14px 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 782px) {
+    #good-books {
+        .secrets-at-once {
+            h1 {
+                font-size: 40px;
+            }
+
+            button {
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 652px) {
+    #good-books {
+        .secrets-at-once {
+            h1 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #good-books {
+        .secrets-at-once {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    #good-books {
+        .secrets-at-once {
+            h1 {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 329px) {
+    #good-books {
+        .secrets-at-once {
+            button {
+                padding: 6px 16px;
+            }
+        }
+    }
+}
+
+// 2
+#number {
+    width: 100%;
+    min-height: 200px;
+    background-color: #F5F4F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    .numbers {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+
+        p {
+            color: #CAC9C6;
+        }
+    }
+}
+
+// 3
+#books {
+    width: 100%;
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+
+    .headersection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+}
+
+// datadan gelen melumat
+#products {
+    width: 100%;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #product {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .boxDiv {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .addtobasket {
+            padding: 7px 17px;
+            color: black;
+            font-size: 12px;
+            border-color: #F3EAD8;
+            background-color: #F3EAD8;
+            gap: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+
+    .button {
+        min-height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        padding-bottom: 20px;
+
+        #pages {
+
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            padding: 7px 17px;
+        }
+    }
+}
+
+
+// 4
+#from-clients {
+    background-image: url(/assets/images/bg_4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    width: 100%;
+    min-height: 500px;
+    padding-top: 20px;
+
+    .fonpicture {
+        width: 100%;
+        min-height: 520px;
+        position: absolute;
+        background-color: #a6b9c7d7;
+    }
+
+    .testimonial {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 400px;
+
+        h6 {
+            color: #E6E6E6;
+        }
+
+        h2 {
+            color: white;
+            font-size: 50px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 782px) {
+    #from-clients {
+        .testimonial {
+            h2 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 493px) {
+    #from-clients {
+        .testimonial {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 377px) {
+    #from-clients {
+        .testimonial {
+            h2 {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+// 5
+#blog {
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+
+    .recent {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h6 {
+            color: #FF7F62;
+        }
+
+        h2 {
+            font-size: 45px;
+        }
+    }
+
+    .the-necessary {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .images {
+            width: 100%;
+
+            .pictures {
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .text {
+            width: 100%;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 782px) {
+    #blog {
+        .recent {
+            h2 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+// footer
+footer {
+
+    width: 100%;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-wrap: wrap;
+    background-color: black;
+
+    .Copyright {
+        display: flex;
+        align-items: center;
+        min-height: 120px;
+        justify-content: center;
+
+        p {
+            display: flex;
+            align-items: center;
+            color: #cecdcd;
+            flex-wrap: wrap;
+
+            a {
+                text-decoration: none;
+
+                span {
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .icon {
+        min-height: 110px;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+}

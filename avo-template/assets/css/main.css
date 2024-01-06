@@ -1,0 +1,586 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+  z-index: 1;
+  position: absolute;
+}
+header nav .alldiv {
+  width: 81%;
+}
+header nav a p {
+  font-size: 25px;
+  color: white;
+}
+header nav a p span {
+  color: #D1002C;
+}
+header nav .menu {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header nav .menu .list {
+  width: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+header nav .menu .list li .home {
+  color: #D1002C;
+}
+header nav .menu .list li a {
+  color: #9E9E9E;
+}
+header nav .menu .list li a:hover {
+  color: #D1002C;
+}
+
+#we-create-modern {
+  background-image: url(/assets/images/bg_1\ \(2\).jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 650px;
+}
+#we-create-modern .modern {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+}
+#we-create-modern .modern h1 {
+  width: 58%;
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+}
+#we-create-modern .modern p {
+  color: #CACACA;
+  width: 58%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+#we-create-modern .modern .buttonstart {
+  width: 57%;
+}
+#we-create-modern .modern .buttonstart button {
+  border-radius: 5px;
+  color: white;
+  padding: 13px 25px;
+  background-color: #D1002C;
+  border-color: #D1002C;
+}
+#we-create-modern .years {
+  width: 79%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#we-create-modern .years p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: white;
+  text-align: end;
+}
+#we-create-modern .years .paraqraf {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+#we-create-modern .years .paraqraf .divyears {
+  display: flex;
+  justify-content: end;
+  width: 97%;
+}
+#we-create-modern .years .paraqraf .divyears h3 {
+  color: white;
+  font-size: 30px;
+}
+#we-create-modern .years .paraqraf .red {
+  background-color: #D1002C;
+  width: 5px;
+  height: 25px;
+}
+#we-create-modern .playall {
+  width: 63%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 15px;
+}
+#we-create-modern .playall .play {
+  width: 60px;
+  height: 60px;
+  background-color: #D1002C;
+  border-radius: 50%;
+}
+#we-create-modern .playall .play .icon-play {
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#we-create-modern .playall .play .icon-play i {
+  color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  #we-create-modern .modern h1 {
+    font-size: 30px;
+  }
+  #we-create-modern .modern p {
+    font-size: 18px;
+    width: 60%;
+  }
+  #we-create-modern .years .paraqraf .divyears h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #we-create-modern .modern h1 {
+    font-size: 25px;
+  }
+  #we-create-modern .modern p {
+    font-size: 16px;
+    width: 62%;
+  }
+  #we-create-modern .years .paraqraf .divyears h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #we-create-modern .modern h1 {
+    font-size: 23px;
+  }
+  #we-create-modern .modern p {
+    font-size: 15px;
+    width: 63%;
+  }
+  #we-create-modern .modern .buttonstart button {
+    padding: 9px 20px;
+  }
+  #we-create-modern .years .paraqraf .divyears h3 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  #we-create-modern .modern h1 {
+    font-size: 20px;
+    width: 75%;
+  }
+  #we-create-modern .modern p {
+    font-size: 13px;
+    width: 65%;
+  }
+  #we-create-modern .modern .buttonstart button {
+    padding: 8px 19px;
+  }
+  #we-create-modern .years .paraqraf .divyears h3 {
+    font-size: 13px;
+  }
+}
+#abaut-us {
+  width: 100%;
+  min-height: 435px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#abaut-us .abaut {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#abaut-us .abaut h1 {
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 35px;
+  color: black;
+}
+#abaut-us .web {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#abaut-us .web .mobile {
+  width: 16%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#abaut-us .web .mobile i {
+  font-size: 45px;
+  min-height: 70px;
+}
+
+#personal-porfolio {
+  width: 100%;
+  min-height: 300px;
+}
+#personal-porfolio .porfolio {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: end;
+}
+#personal-porfolio .porfolio h3 {
+  width: 75%;
+  font-size: 35px;
+  min-height: 150px;
+}
+#personal-porfolio .porfolio p {
+  width: 76%;
+  color: #9E9E9E;
+  font-size: 17px;
+}
+#personal-porfolio .personImage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#personal-porfolio .personImage img {
+  width: 100%;
+  min-height: 330px;
+}
+#personal-porfolio .word-mountains {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  text-align: start;
+  margin-bottom: 20px;
+}
+#personal-porfolio .word-mountains p {
+  padding-top: 20px;
+  width: 72%;
+  color: #9E9E9E;
+  min-height: 250px;
+}
+#personal-porfolio .word-mountains button {
+  padding: 6px 20px;
+  background-color: #D1002C;
+  border-color: #D1002C;
+  color: white;
+}
+#personal-porfolio .numbertext {
+  display: flex;
+}
+#personal-porfolio .numbertext .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+#personal-porfolio .numbertext .number p {
+  color: #D1002C;
+}
+#personal-porfolio .numbertext .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#personal-porfolio .numbertext .text .search {
+  margin-bottom: 0px;
+}
+#personal-porfolio .underdivtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#personal-porfolio .underdivtext p {
+  width: 69%;
+  color: #9E9E9E;
+}
+
+#abaut-us {
+  width: 100%;
+  min-height: 650px;
+}
+#abaut-us .says {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#abaut-us .allabaut-us-persondata {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 270px;
+  justify-content: center;
+  background-color: #F3F3F3;
+  margin-bottom: 20px;
+}
+#abaut-us .allabaut-us-persondata .away {
+  width: 57%;
+}
+#abaut-us .person-data {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+#abaut-us .person-data .inagesperson {
+  width: 39%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#abaut-us .person-data .inagesperson img {
+  width: 48%;
+  border-radius: 50%;
+}
+#abaut-us .person-data .person-data-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#products {
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products #product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products #product .boxDiv {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#products #product .addtobasket {
+  padding: 7px 17px;
+  color: white;
+  font-size: 12px;
+  border-color: #D1002C;
+  background-color: #D1002C;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#products #product .addtobasket:hover {
+  background-color: white;
+  color: black;
+}
+#products .button {
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+#products .button #pages {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 7px 17px;
+}
+
+@media only screen and (max-width: 782px) {
+  footer .footer p {
+    font-size: 13px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+}
+header nav .alldiv {
+  width: 81%;
+}
+header nav a p {
+  font-size: 25px;
+  color: white;
+}
+header nav a p span {
+  color: #D1002C;
+}
+header nav .menu {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header nav .menu .list {
+  width: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+header nav .menu .list li .home {
+  color: #D1002C;
+}
+header nav .menu .list li a {
+  color: #9E9E9E;
+}
+header nav .menu .list li a:hover {
+  color: #D1002C;
+}
+
+#product-sec {
+  min-height: 665px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#product-sec #getProduct {
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+#product-sec #getProduct .box {
+  padding-bottom: 20px;
+}
+#product-sec #getProduct button {
+  background-color: #D1002C;
+  border-radius: 20px;
+  padding: 8px 17px;
+  font-size: 12px;
+  color: white;
+}
+#product-sec #getProduct button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 782px) {
+  footer .footer p {
+    font-size: 13px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  min-height: 100px;
+  z-index: 1;
+  position: absolute;
+}
+header nav .alldiv {
+  width: 81%;
+}
+header nav a p {
+  font-size: 25px;
+  color: white;
+}
+header nav a p span {
+  color: #D1002C;
+}
+header nav .menu {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+header nav .menu .list {
+  width: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+header nav .menu .list li .home {
+  color: #D1002C;
+}
+header nav .menu .list li a {
+  color: #9E9E9E;
+}
+header nav .menu .list li a:hover {
+  color: #D1002C;
+}
+
+#products {
+  width: 100%;
+  min-height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+#products .formtitle {
+  min-height: 200px;
+  width: 100%;
+  padding-top: 20px;
+}
+#products .formtitle h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+}
+#products .formtitle p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.395);
+}
+
+@media only screen and (max-width: 782px) {
+  footer .footer p {
+    font-size: 13px;
+  }
+}

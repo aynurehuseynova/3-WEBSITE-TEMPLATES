@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    min-height: 80px;
+
+    nav {
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .alldiv {
+            display: flex;
+            justify-content: end;
+
+            ul {
+                width: 40%;
+                gap: 25px;
+
+                .home {
+                    a {
+                        color: #FFC300;
+                    }
+                }
+
+                li {
+                    a {
+                        color: black;
+
+                        &:hover {
+                            color: #FFC300;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+
+        .call {
+            .icon {
+                &:hover {
+                    color: #FFC300;
+                }
+
+                a {
+                    color: black;
+
+                    &:hover {
+                        color: #FFC300;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+#product-sec {
+    min-height: 610px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #getProduct {
+        min-height:450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+.box{
+    padding-bottom: 20px;
+}
+        button {
+            background-color: rgb(255, 197, 121);
+            border-radius: 20px;
+            padding: 8px 17px;
+            font-size: 12px;
+            color: black;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
+
+footer {
+
+    width: 100%;
+    min-height: 130px;
+
+    .Copyright {
+        display: flex;
+        align-items: center;
+        min-height: 120px;
+
+        p {
+            display: flex;
+            align-items: center;
+            color: #cecdcd;
+
+            a {
+                text-decoration: none;
+
+                span {
+                    color: #92B9E8;
+                }
+            }
+        }
+    }
+
+    .icon {
+        min-height: 110px;
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+}
+@media only screen and (max-width: 782px) {
+    footer {
+        .Copyright {
+            p  {
+                font-size: 13px;
+            }
+        }
+    }
+}
